@@ -1,49 +1,116 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-        <style>
-        h1{
-            font-family:sans-serif;
-            font-size:3em;
-            text-align:center;
-            color:red;
-            background-color:blue;
-        }
-        #1{
-            color:green;
-        }
-        
-        body{
-            font-style:italic;
-            color:green;
-            background-color:yellow;
-        }
-        </style>
-    </head>
-    <body>
-        
-        <h1>A's blog</h1>
+	<head>
+	<title>Project-Assignment</title>
+		<style>
+			#a{color:red;
+			font-size:40px; }
+		
+			table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			font-size:30px;
+			
+					  }
+			th, td {
+			padding: 5px;
+			text-align: left; 
+			font-size:30px;
+			
+						body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			}
 
-        <h3>Contents</h3>
-        <ul>
-            <a href='#space'><li id='1'>Science</li></a>
-            <li id='2'>Business</li>
-            <li id='3'>Startups</li>
-        </ul>
-        
-        <h2>First post</h2>
-        <h6>Posted on some date in some year</h6>
-        
-        <p>Something excited happened.</p>
-     <p id='space'>   
-        <h2>
-Space
-</h2>
+				
+			  .mobile-container {
+			  max-width: auto;
+			  margin: auto;
+			  background-color: #555;
+			  height: 200px;
+			  color: white;
+			  border-radius: 10px;
+			}
 
-A black hole is a region of spacetime exhibiting gravitational acceleration so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it.[6] The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.[7][8] The boundary of the region from which no escape is possible is called the event horizon. Although the event horizon has an enormous effect on the fate and circumstances of an object crossing it, no locally detectable features appear to be observed.[9] In many ways, a black hole acts like an ideal black body, as it reflects no light.[10][11] Moreover, quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is on the order of billionths of a kelvin for black holes of stellar mass, making it essentially impossible to observe.
+			.topnav {
+			  overflow: hidden;
+			  background-color: #3344;
+			  position: relative;
+			}
 
-Objects whose gravitational fields are too strong for light to escape were first considered in the 18th century by John Michell and Pierre-Simon Laplace.[12] The first modern solution of general relativity that would characterize a black hole was found by Karl Schwarzschild in 1916, although its interpretation as a region of space from which nothing can escape was first published by David Finkelstein in 1958. Black holes were long considered a mathematical curiosity; it was during the 1960s that theoretical work showed they were a generic prediction of general relativity. The discovery of neutron stars by Jocelyn Bell Burnell in 1967 sparked interest in gravitationally collapsed compact objects as a possible astrophysical reality.
-    </body>
-</html>
+
+			.topnav a {
+			  color: white;
+			  padding: 14px 16px;
+			  text-decoration:none;
+			  font-size: 17px;
+			  display: block;
+			}
+
+			.topnav a.icon {
+			  background: black;
+			  display: block;
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			}
+			#tablee{
+			background-color:rgb(118, 73, 42);
+			}
+		</style>
+	</head>
+	<div id='tablee'>
+	<body>
+	<h1 id='a' align='center'>Assignments by Abhay<h1>
+	<table align='center'> 
+	  <tr>
+		<th>Name</th>
+		<td>Click</td>
+	  </tr>
+	  <tr>
+		<th>Assignment1</th>
+		<td><a  href=#myLinks>Click to view</a></td>
+	  </tr>
+	  
+	</table>
+	<br>
+	<br>
+	<br><br><br><br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+<h1>Assignment 1(Create a phone app like button on top left to expand and collapse menu options )
+		<div class="mobile-container" style:margin-top=100px>
+
+		<!-- Top Navigation Menu -->
+		<div class="topnav">
+		  <a href="#home" class="active"></a>
+		  <div id="myLinks">
+			<a target='_balnk' href="https://www.businessinsider.in/science/space">Know about Space</a>
+			<a target='_balnk' href="https://www.businessinsider.in/strategy">Strategies around the world</a>
+			<a target='_balnk' href="https://www.businessinsider.in/business/corporates">Current situations in Corporates</a>
+		  </div>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+        <h5 align='center'>Click on the button left corner for News</h5>
+		
+
+		<!-- End smartphone / tablet look -->
+		</div>
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
+	</body>
+	</html>
